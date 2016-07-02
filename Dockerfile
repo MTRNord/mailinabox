@@ -36,6 +36,7 @@ RUN useradd -m user-data
 # of the image extremely fast.
 
 # Update system packages.
+RUN add-apt-repository -y ppa:mail-in-a-box/ppa
 RUN apt-get update
 RUN DEBIAN_FRONTEND=noninteractive apt-get upgrade -y
 
